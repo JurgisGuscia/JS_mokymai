@@ -1,0 +1,27 @@
+*{
+    text-decoration: none;
+    list-style: none;
+    color: black;
+}
+a:hover{
+    text-decoration: underline;
+}
+.navBar{
+    display: flex;
+}
+.navBar > li{
+    display: inline-block;
+    margin-left: 30px;
+}
+
+.contactForm > label{
+    display: inline-block;
+    width: 70px;
+    display: flex;
+}
+.contactForm > textarea{
+    resize: none;
+}
+img{
+    width:800px;
+}
