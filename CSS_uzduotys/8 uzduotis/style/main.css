@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-flow: column nowrap;
+}
+h1{
+    margin: 20px;
+}
+.section{
+    display: flex;
+    
+    flex-flow: row wrap;
+    width: 100%;
+}
+.section1{
+    background-color: rgb(214, 173, 150); 
+    height: 100px;
+    justify-content: space-between;
+    align-items: center; 
+    padding: 0px 20px 0px 20px;  
+}
+.section1>ul{
+    list-style: none;
+}
+.section1>ul>li{
+    display: inline-block;
+    margin: 10px;
+}
+.section2{
+    background-color: rgb(149, 52, 240);
+    height: 70px;
+    color: white;
+    
+}
+.section2>p{
+    width: 80%;
+    margin:auto;
+    text-align: center;
+}
+.section3{
+    justify-content: space-around;
+}
+.card{
+    border: solid grey 1px;
+    width: 300px;
+    height: 250px;
+    padding: 10px;
+    margin: 20px;
+}
+.section4{
+    background-color: rgb(149, 52, 240);
+    height: 70px;
+    color: white;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+}
+.section4>p{
+    width: 30%;
+    margin:auto;
+    text-align: center;
+}
+.section5{
+    background-color: rgb(211, 158, 89);
+    height: 70px;
+    color: white;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+}
+.section5>p{
+    width: 20%;
+    margin:auto;
+    text-align: center;
+}
