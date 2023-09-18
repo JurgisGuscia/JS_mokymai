@@ -1,0 +1,45 @@
+:root{
+    --color1: orange;
+    --color2: red;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.line{
+    padding: 20px;
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+}
+.line1{
+    background-color: var(--color1);
+}
+
+.line2{
+    background-color: var(--color2);
+}
+.line2>div{
+    background-color: white;
+    margin: 10px;
+}
+.line3{
+    background-color: var(--color1);
+    justify-content: center;
+}
+.line3>div{
+    background-color: white;
+    padding: 50px;
+    width: 600px;
+}
+.line4{
+    justify-content: space-between;
+    background-color: var(--color2);
+}
+.line4>div{
+    background-color: var(--color1);  
+    width: 400px;    
+    padding: 50px;
+    margin: 50px;     
+}
