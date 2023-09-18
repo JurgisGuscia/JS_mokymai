@@ -1,0 +1,29 @@
+:root{
+    --color: #f7e5cd;
+}
+
+body{
+    background-color: var(--color);
+}
+
+.card{
+    background-color: #fff;
+    width: 500px;
+    height:  280px;
+    text-align: center;
+    padding: 10px 20px 0px 20px;
+    margin: auto;
+    margin-top: 30px;
+}
+.card>button{
+    width: 80px;
+    height: 40px;
+    background-color: var(--color);
+    border: none;
+    margin-top: 25px;
+    transition: ease-in-out 0.1s;
+}
+
+.card>button:hover{
+    margin-top: 20px;
+}
