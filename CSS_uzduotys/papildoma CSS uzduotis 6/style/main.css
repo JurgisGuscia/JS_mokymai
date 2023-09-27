@@ -1,0 +1,52 @@
+:root{
+    --inter: 'Inter', sans-serif;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.wrapper{
+    display: flex;
+    flex-flow: column nowrap;
+    width: 800px;
+    align-items: center;
+}
+img{
+    height: 373px;
+    width: 800px;
+    object-fit: cover;
+}.aboutMe{
+    display: flex;
+    width: 800px;
+    height: 62px;
+    box-sizing: border-box;
+    padding: 15px 510px 15px 133px;
+    align-items: center;
+    background: linear-gradient(180deg, #AFBACB 0%, rgba(175, 186, 203, 0.00) 110.33%), #FFF;
+    color: #373636;
+    font-family: var(--inter);
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100%;
+    letter-spacing: 0.42px;
+    margin-bottom: 100px;
+    position: sticky;
+    top: 0px;
+}
+p{
+    color: #000;
+    font-family: var(--inter);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    letter-spacing: 0.42px;
+    width: 464px;
+    margin-bottom: 20px;
+}
