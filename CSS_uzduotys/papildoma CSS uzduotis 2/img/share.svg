@@ -1,0 +1,10 @@
+<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="ShareNetwork" clip-path="url(#clip0_301_25)">
+<path id="Vector" d="M9.31812 4.58125L5.68188 6.91875M5.68188 9.08125L9.31812 11.4187M6 8C6 9.10457 5.10457 10 4 10C2.89543 10 2 9.10457 2 8C2 6.89543 2.89543 6 4 6C5.10457 6 6 6.89543 6 8ZM13 12.5C13 13.6046 12.1046 14.5 11 14.5C9.89543 14.5 9 13.6046 9 12.5C9 11.3954 9.89543 10.5 11 10.5C12.1046 10.5 13 11.3954 13 12.5ZM13 3.5C13 4.60457 12.1046 5.5 11 5.5C9.89543 5.5 9 4.60457 9 3.5C9 2.39543 9.89543 1.5 11 1.5C12.1046 1.5 13 2.39543 13 3.5Z" stroke="#959393" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_301_25">
+<rect width="16" height="16" fill="white"/>
+</clipPath>
+</defs>
+</svg>
