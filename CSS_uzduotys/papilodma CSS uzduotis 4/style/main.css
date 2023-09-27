@@ -1,0 +1,89 @@
+:root{
+    --inter: 'Inter', sans-serif;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background: #131417;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-radius: 12px;
+    background: rgba(34, 34, 37, 0.70);
+    width: 531px;
+    height: 224px;
+    padding: 65px 72px 66px 72px;
+}   
+h1{
+    width: 531px;
+    color: #FFF;
+    font-family: var(--inter);
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100%;
+    letter-spacing: 0.42px;
+}
+p{
+    width: 525px;
+    color: #FFF;
+    font-family: var(--inter);
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+}
+button{
+    color: #F17965;
+    font-family: var(--inter);
+    background: rgba(34, 34, 37, 0.70);
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 26px;
+    letter-spacing: -0.75px;
+    display: flex;
+    padding: 8px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 12px;
+    border: 2px solid #F17965;  
+}
+.trumpet{
+    width: 195px;
+    height: 195px;
+    transform: rotate(12deg);
+    flex-shrink: 0;
+    position:relative;
+    top: -160px;
+    left: 140px;
+}
+.blueCircle{
+    z-index: 1;
+    position: relative;
+    top: 170px;
+    left: -330px;
+}
+.redCircle{
+    z-index: 2;
+    position: relative;
+    top: 120px;
+    left: -200px;
+}
+.star{
+    z-index: 3;
+    position: relative;
+    top: 120px;
+    left: -130px;
+}
