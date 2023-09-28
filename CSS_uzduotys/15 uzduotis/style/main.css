@@ -1,0 +1,174 @@
+:root{
+    --mont: 'Montserrat', sans-serif;
+}
+html{
+    overflow-x: hidden;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background: url("../img/bg.png");
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+header{
+    box-sizing: border-box;
+    padding: 16px 160px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background: #000;
+}
+header a {
+    color: #FFF;
+    text-align: center;
+    font-family: var(--mont);
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    font-variant: all-small-caps;
+    letter-spacing: 1.9px;
+    text-decoration: none;
+}
+.logoContainer{
+    border: solid #fff 2px;
+    width: 56px;
+    height: 56px;
+    border-radius: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mainPage{
+    width: 1120px;
+    height: 728px;
+    background: #000;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);    
+    margin: 80px 0px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+.mainPage h1{
+    color: #FFF;
+    text-align: center;
+    font-family: var(--mont);
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 5.12px;
+    margin: 56px 0px 16px;
+}   
+.mainPage h3{
+    color: #FFF;
+    text-align: center;
+    font-family: var(--mont);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.6px;
+}
+.cardContainer{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    margin-top: 48px;
+    width: 90%;
+}
+.card{
+    width: 293px;
+    height: 440px;
+    border: 3px solid #FFF;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+.card h2{
+    color: #FFF;
+    text-align: center;
+    font-family: var(--mont);
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    font-variant: all-small-caps;
+    letter-spacing: 0.96px;
+}
+.card p{
+    color: #FFF;
+    text-align: center;
+    font-family: var(--mont);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 25px;
+    letter-spacing: 0.54px;
+    width: 227px;
+}
+.card img{
+    width: 127px;
+    height: 127px;
+    border-radius: 127px;
+    margin: 46px 0px 30px 0px;
+    object-fit: cover;
+}
+.card button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 159px;
+    height: 50px;
+    color: #9661E8;
+    text-align: center;
+    font-family: var(--mont);
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    font-variant: all-small-caps;
+    letter-spacing: 1.52px;
+    margin-top: 16px;
+    background-color: rgba(0, 0, 0, 0.0);
+    border: none;
+    transition: ease-in-out 0.1s;
+}
+.card button:hover{
+    background-color: #9661E8;
+    color: #000;
+    cursor:pointer;
+}
+.separator{
+    width: 23px;
+    height: 3px;
+    background: #FFF;
+    margin: 8px 0px 18px 0px;
+}
+footer{
+    display: flex;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 16px 8px;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    color: #FFF;
+    text-align: center;
+    font-family: var(--mont);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+}
