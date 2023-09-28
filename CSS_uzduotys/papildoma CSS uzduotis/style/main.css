@@ -402,6 +402,8 @@ body{
     height: calc(100vw * 0.66);
     position: relative;
     background: radial-gradient(50.92% 48.95% at 70.14% 64.4%, rgba(255, 255, 255, 0.00) 3.36%, rgba(0, 0, 0, 0.00) 19.22%, #080A0B 99.74%), url("../img/bg4.png"), lightgray -440.272px 0px / 165.462% 133.24% no-repeat;
+    background-repeat: no-repeat;
+    background-size: cover;
     background-position: cover;
 }
 .system h3 {
