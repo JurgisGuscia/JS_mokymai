@@ -3,15 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/main.css">
     <script
         src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
         crossorigin="anonymous">
     </script>
-    <link rel="stylesheet" href="./style/main.css">
     <title>CSS baigiamasis</title>
 </head>
 <body>
+    <!-- dialog divs -->
+    <div class="backdrop hidden"></div>
+    <div class="askQuestion hidden">
+        <h1>Ask a question</h1>
+        <button class="closeFormButton"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 16 15" fill="none">
+            <line x1="1.35355" y1="0.646447" x2="15.3536" y2="14.6464" stroke="#C1C1C1"/>
+            <line x1="0.646447" y1="14.6464" x2="14.6464" y2="0.646448" stroke="#C1C1C1"/>
+            </svg></button>
+        <form action="index.html" method="post" id="askQuestion">
+            <input type="text" placeholder="Name" autocomplete="off">
+            <input type="text" placeholder="Phone number*" autocomplete="off">
+            <input type="email" placeholder="E-mail*" autocomplete="off">
+            <input type="text" placeholder="Product/service of interest" autocomplete="off">
+            <textarea placeholder="Message*" autocomplete="off"></textarea>
+            <input type="checkbox">
+        </form>
+        <p>By submitting an application you agree to the privacy policy</p>
+        <button form="askQuestion" class="sendQuestionButton">send</button>
+    </div>
+
+
+    <div class="successMessage hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" width="142" height="142" viewBox="0 0 142 142" fill="none">
+            <path d="M71 112C93.6437 112 112 93.6437 112 71C112 48.3563 93.6437 30 71 30C48.3563 30 30 48.3563 30 71C30 93.6437 48.3563 112 71 112Z" fill="#0DC332"/>
+            <path d="M133.5 71C133.5 105.518 105.518 133.5 71 133.5C36.4822 133.5 8.5 105.518 8.5 71C8.5 36.4822 36.4822 8.5 71 8.5C105.518 8.5 133.5 36.4822 133.5 71Z" stroke="#D1D1D1"/>
+            <path d="M92 56L66.1538 85L50 72.1111" stroke="white" stroke-width="6" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        <h1>Thank You!</h1>
+        <p>Your message has been sent, we will contact you shortly</p>
+        <button class="messageSentConfirmButton">GO BACK</button>
+    </div>
     <!-- top navigation bar -->
     <header>
         <div class="headerSection wrapper">
@@ -20,119 +51,32 @@
                 <img class="logoTitle" src="./img/logoTitle.png">
             </a>
             <ul class="navBar">
-                <li class="activeNavBarLink"><a href="index.html">home</a></li>
+                <li><a href="index.html">home</a></li>
                 <li><a href="gallery.html">gallery</a></li>
                 <li><a href="projects.html">projects</a></li>
                 <li><a href="certificates.html">certificates</a></li>
-                <li><a href="contacts.html">contacts</a></li>
+                <li class="activeNavBarLink"><a href="contacts.html">contacts</a></li>
             </ul>
         </div>
     </header>
-    <!-- project preview section -->
-    <div class="homePageProjectSectionWrapper">
-        <div class="homePageProjectSection wrapper">
-            <div class="infoField">
-                <h1>project</h1>
-                <h2>nurtown</h2>
-                <div class="arrowsContainer">
-                    <div class="arrowContainer"><img src="./img/arrow.svg" class="leftArrow"></div>
-                    <div class="arrowContainer darkerArrowContainer"><img src="./img/arrow.svg" class="rightArrow"></div>
-                </div>
-                <div class="lineSeparator"></div>
-                <div class="slideContainer">
-                    <h3>01</h3>
-                    <div class="slideSeparator"></div>
-                    <h3>02</h3>
-                </div>
-            </div>
-            <div class="projectImageContainer">
-                <img class="projectSectionImage" src="./img/bg1.jpg">
-                <a href="#" class="projectSectionLink">Check out<img src="./img/arrow.svg"></a>
-            </div>
-        </div>
-    </div>
-    <!-- about company section -->
-    <div class="aboutCompanySectionWrapper">
+    <!-- contact section -->
+    <div class="contactSectionWrapper">
         <div class="wrapper">
-            <div class="aboutCompanySection">
-                <div class="firstAboutColumn">
-                    <img class="img1" src="./img/aboutImg1.jpg">
-                    <img class="img2" src="./img/aboutImg2.jpg">
-                </div>
-                <div class="secondAboutColumn">
-                    <img src="./img/aboutImg3.jpg">
-                </div>
-                <div class="thirdAboutColumn">
-                    <h1>About company</h1>
-                    <p>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-                    </p>
-                    <a href="#">read <img src="./img/arrow.svg"></a>
-                </div>
+            <div class="contactSection">
+                <h1>contact</h1>
+                <h2>information</h2>
+                <h3>«Digital Project»</h3>
+                <p> г. Караганда, ул. Телевизионная 10</p>
+                <h4>+7 (701) 77 76 811</h4>
+                <p>Galym.sultanov@mail.ru</p>
+                <button class="feedBackButton">feedback</button>
             </div>
         </div>
-    </div>
-    <!-- main goals section -->
-    <div class="goalsSectionWrapper">
-        <div class="wrapper">
-            <div class="goalsSection">
-                <h1>Main goals</h1>
-                <div class="goalWrapper">
-                    <div class="goal"> 
-                        <h1>1</h1>
-                        <p class="firstGoalP">Creating comfortable conditions and improving the quality of customer service</p>
-                    </div>
-                    <div class="goal">
-                        <h1>2</h1>
-                        <p>Constantly improve the quality of services provided by training staff, purchasing new equipment and increased advertising on the market</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- our projects section -->
-    <div class="ourProjectsSectionWrapper">
-        <div class="wrapper">
-            <div class="ourProjectsSection">
-                <h1>Our projects</h1>
-                <div class="projectListContainer">
-                    <div class="firstOurProjectImg  ourProjectImg">
-                        <h1>LEISURE CENTER</h1>
-                        <a href="#" class="firstProjectLinkContainer">MORE DETAILS <img src="./img/arrow.svg"></a>
-                    </div>
-                    <img src="./img/ourProject2.png" class="secondOurProjectImg ourProjectImg">
-                    <img src="./img/ourProject3.png" class="thirdOurProjectImg ourProjectImg">
-                    <img src="./img/ourProject4.png" class="fourthOurProjectImg ourProjectImg">
-                    <img src="./img/ourProject5.png" class="fifthOurProjectImg ourProjectImg">
-                </div>
-                <div class="ourProjectsLinkContainer">
-                    <a href="#">all projects <img src="./img/arrow.svg"></a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- connect section -->
-    <div class="connectSectionWrapper">
-        <div class="wrapper">
-            <div class="connectSection">
-                <h1>Connect with us</h1>
-                <div class="connectMainSection">
-                    <div class="formSection">
-                        <form action="#" id="contact" method="post">
-                            <input type="text" name="name" placeholder="Name" autocomplete="off">
-                            <input type="text" name="phone" placeholder="Phone Number*"  autocomplete="off">
-                            <input type="email" name="email" placeholder="Email*"  autocomplete="off">
-                            <input type="text" name="interest" placeholder="Product/service of interest"  autocomplete="off">
-                            <textarea name="message" placeholder="Message*"></textarea>
-                            <input type="checkbox">
-                        </form>
-                    </div>
-                    <img src="./img/connectImg.jpg">
-                </div>
-                <p>By submitting an application you agree to the privacy policy</p>
-                <button type="submit" form="contact" class="homeConnectButton">send<img src="./img/arrow.svg"></button>
-            </div>
-        </div>
+        <img src="./img/map.jpg">
+        <svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" viewBox="0 0 55 55" fill="none">
+            <circle cx="27.5" cy="27.5" r="27.5" fill="#CECECE" fill-opacity="0.73"/>
+            <circle cx="28" cy="28" r="15" fill="#333333"/>
+            </svg>
     </div>
     <!-- footer section -->
     <footer>
@@ -234,8 +178,24 @@
     </footer>
 </body>
 </html>
+
 <script>
-    $(".homeConnectButton").on("click", e=>{
+    $(".closeFormButton").on("click", e=>{
+        $(".backdrop").addClass("hidden");
+        $(".askQuestion").addClass("hidden");
+    });
+    $(".feedBackButton").on("click", e=>{
+        $(".backdrop").removeClass("hidden");
+        $(".askQuestion").removeClass("hidden");
+    });
+    $(".sendQuestionButton").on("click", e=>{
         e.preventDefault();
+        $(".askQuestion").addClass("hidden");
+        $(".successMessage").removeClass("hidden");
+    });
+    $(".messageSentConfirmButton").on("click", e=>{
+        e.preventDefault();
+        $(".backdrop").addClass("hidden");
+        $(".successMessage").addClass("hidden");
     });
 </script>

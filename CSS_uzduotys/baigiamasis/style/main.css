@@ -6,6 +6,9 @@
     padding: 0px;
     box-sizing: border-box;
 }
+html {
+    scroll-behavior: smooth;
+  }
 .developmentMargin{
     margin-top: 500px;
 }
@@ -29,6 +32,9 @@
     justify-content: flex-start;
     align-items: center;
     background: #fff;
+}
+body::-webkit-scrollbar{
+    display: none;
 }
 .headerSection{
     display: flex;
@@ -487,6 +493,9 @@
     width: 370px;
     height: 255px;
 }
+.connectSection{
+    position: relative;
+}
  .connectSectionWrapper{
     width: 100%;
     margin-top: 120px;
@@ -499,6 +508,10 @@
     font-weight: 300;
     line-height: 64px;
     margin-bottom: 22px;
+ }
+ .connectSection p{
+    position: absolute;
+    bottom: 100px;
  }
  .connectMainSection{
     display: flex;
@@ -683,5 +696,532 @@ footer{
     line-height: 24px; 
     letter-spacing: 0.42px;
 }
+.gallerySectionWrapper{
+    width: 100%;
+    margin-top: 63px;
+}
+.gallerySection h1{
+    color: var(--Gray-4, #BDBDBD);
+    font-family: hoves;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 64px;
+    text-transform: uppercase;
+}
+.gallerySection h2{
+    color: var(--Gray-1, #333);
+    font-family: hoves;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 64px;
+    text-transform: uppercase;
+}
+.photoGalleryContainer{
+    display: flex;
+    flex-flow: row wrap;
+    gap: 30px;
+    margin-top: 61px;
+}
+.photoContainer{
+    width: 210px;
+    height: 260px;
+    position: relative;
+}
+.globalPhoto{
+    background-position: center;
+    position: relative;
+}
+.photo1{
+    background-image: url("../img/photoGallery/photo1.jpg");
+}
+.photo2{
+    background-image: url("../img/photoGallery/photo2.jpg");
+}
+.photo3{
+    background-image: url("../img/photoGallery/photo3.jpg");
+}
+.photo4{
+    background-image: url("../img/photoGallery/photo4.jpg");
+}
+.photo5{
+    background-image: url("../img/photoGallery/photo5.jpg");
+}
+.photo6{
+    background-image: url("../img/photoGallery/photo6.jpg");
+}
+.photo7{
+    background-image: url("../img/photoGallery/photo7.jpg");
+}
+.photo8{
+    background-image: url("../img/photoGallery/photo8.jpg");
+}
+.photo9{
+    background-image: url("../img/photoGallery/photo9.jpg");
+}
+.photo10{
+    background-image: url("../img/photoGallery/photo10.jpg");
+}
+.photoContainer::after{
+    content: "Description or explanation of the image.";
+    color: rgba(255, 255, 255, 0.0);
+    position: absolute;
+    bottom: 0px;
+    padding: 10px 10px;
+    width: 100%;
+    height: 0px;
+    transition: ease-in-out 0.2s;
+}
 
-
+.photoContainer:hover::after{
+    content: "Description or explanation of the image.";
+    color: #333;
+    position: absolute;
+    bottom: 0px;
+    padding: 10px 10px;
+    width: 190px;
+    height: 30%;
+    background: #FBFBFB;
+}
+.slideContainer2{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 350px;
+    margin-top: 60px;
+}
+.inActiveSlide{
+    color: #BDBDBD;
+    font-family: hoves;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+.activeSlide{
+    color: #333;
+    font-family: hoves;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+.ourProjectsSection2{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.ourProjectsSection2 h1{
+    color: #BDBDBD;
+    font-family: hoves;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 64px;
+    text-transform: uppercase;
+}
+.ourProjectsSection2 h2{
+    color: #333;
+    font-family: hoves;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 64px;
+    text-transform: uppercase;
+}
+.projectSeparator{
+    width: 1170px;
+    height: 1px;
+    background: #F2F2F2;
+    margin: 30px 0px;
+}
+.projectListContainer2{
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 60px;
+}
+.projectCard{
+    width: 1170px;
+    height: 435px;
+    background: #FBFBFB;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 30px;
+}
+.projectCard img{
+    width: 670px;
+    height: 435px;
+}
+.projectInfoContainer{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100%;
+}
+.projectInfoContainer h1{
+    width: 440px;
+    color: #BDBDBD;
+    font-family: hoves;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+.projectInfoContainer p{
+    width: 400px;
+    color: #000;
+    font-family: hoves;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 25px;
+    margin: 20px 40px 64px 0px;
+}
+.projectInfoContainer a{
+    display: block;
+    width: 222px;
+    height: 71px;
+    background: #FFF;
+    color: #333;
+    font-family: hoves;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 12px; 
+    letter-spacing: 2.4px;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.projectInfoContainer a img{
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+}
+.certificatesSectionWrapper{
+    width: 100%;
+    margin-top: 120px;
+}
+.certificatesSection{
+    display: flex;
+    flex-flow: column nowrap;
+}
+.certificatesSection h1{
+    color: #BDBDBD;
+    font-family: hoves;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 64px;
+    text-transform: uppercase;
+}
+.certificatesSection h2{
+    color: var(--Gray-1, #333);
+    font-family: hoves;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 64px; 
+    text-transform: uppercase;
+}
+.certificateContainer{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin-top: 42px;
+}
+.certificateContainer img{
+    width: 337px;
+    height: 450px;
+}
+.certificateControlContainer{
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+}
+.contactSectionWrapper{
+    width: 100%;
+    position: relative;
+    margin-top: 120px;
+    min-height: 42vh;
+}
+.contactSectionWrapper img{
+    position: absolute;
+    right: -280px;
+    top: 0px;
+    width: 1319px;
+    height: 501px;
+    object-fit: cover;
+}
+.contactSectionWrapper svg{
+    position: absolute;
+    right: 250px;
+    top: 200px;
+    width: 55px;
+    height: 55px;
+    z-index: 33;
+}
+.contactSection{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.contactSection h1{
+    color: #BDBDBD;
+    font-family: hoves;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 64px;
+    text-transform: uppercase;
+}
+.contactSection h2{
+    color: #333;
+    font-family: hoves;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 64px;
+    text-transform: uppercase;
+    margin-bottom: 34px;
+}
+.contactSection h3{
+    color: #333;
+    font-family: hoves;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.contactSection p{
+    color: #333;
+    font-family: hoves;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 140.8%;
+    margin-bottom: 43px;
+}
+.contactSection h4{
+    color: #333;
+    font-family: hoves;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 52px;
+}
+.contactSection button{
+    width: 222px;
+    height: 71px;
+    background: #333;
+    border: none;
+    color: #FFF;
+    font-family: hoves;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 12px;
+    letter-spacing: 2.4px;
+    text-transform: uppercase;
+}
+.contactSection button:hover{
+    cursor: pointer;
+}
+.backdrop{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background:rgba(51, 51, 51, 0.8);
+    z-index: 99;
+}
+.askQuestion{
+    z-index: 999;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    background-color: #fff;
+    width: 469px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 26px 39px;
+}
+.askQuestion h1{
+    color: #333;
+    font-family: hoves;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.84px;
+    margin-bottom: 25px;
+}
+.askQuestion form{
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 10px;
+}
+.askQuestion form input{
+    width: 391px;
+    height: 46px;
+    background: #F3F3F3;
+    color: #8D8D8D;
+    font-family: hoves;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.56px;
+    border: none;
+    padding: 14px 21px;
+}
+.askQuestion form textarea{
+    width: 391px;
+    height: 147px;  
+    background: #F3F3F3;
+    color: #8D8D8D;
+    font-family: hoves;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.56px;
+    border: none;
+    padding: 14px 21px;
+    border: none;
+    resize: none;
+}
+.askQuestion p{
+    color: #333;
+    font-family: hoves;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.42px;
+    width: 330px;
+    position: absolute;
+    bottom: 90px;
+    left: 80px;
+}
+.sendQuestionButton{
+    width: 391px;
+    height: 42px;   
+    color: #FFF;
+    background: #333;
+    font-family: hoves;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 100;
+    line-height: 12px; 
+    letter-spacing: 2.4px;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 16px 0px;
+    border: none;
+    margin-top: 25px;
+}
+.sendQuestionButton:hover{
+    cursor: pointer;
+}
+.closeFormButton{
+    border: none;
+    background: none;
+    position: absolute;
+    top: 35px;
+    right: 40px;
+}
+.closeFormButton:hover{
+    cursor: pointer;
+}
+.formSection form input[type="checkbox"]{
+    width: 24px;
+    height: 24px;
+    accent-color:#F3F3F3;
+    z-index: 33;
+}
+.askQuestion form input[type="checkbox"]{
+    width: 24px;
+    height: 24px;
+    accent-color:#F3F3F3;
+}
+.hidden{
+    display: none;
+}
+.successMessage{
+    width: 516px;
+    height: 421px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: 999;
+    text-align: center;
+    background: #fff;
+}
+.successMessage svg{
+    width: 142px;
+    height: 142px;
+    margin-top: 44px;
+    margin-bottom: 24px;
+}
+.successMessage h1{
+    color: #333;
+    font-family: hoves;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px; 
+    letter-spacing: 0.72px; 
+}
+.successMessage p{
+    color: #4F4F4F;
+    text-align: center;
+    width: 426px;
+    font-family: hoves;
+    font-size: 14px;
+    font-style: normal;
+    width: 400px;
+    margin: auto;
+    font-weight: 600;
+    line-height: 26px; 
+    letter-spacing: 0.42px;
+    margin-top: 27px;
+    margin-bottom: 41px;
+}
+.successMessage button{
+    width: 391px;
+    height: 42px;
+    background: #333;
+    color: #FFF;
+    font-family: hoves;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 12px; 
+    letter-spacing: 2.4px;
+    text-transform: uppercase;
+    border: none;
+    padding: 15px auto;
+}
+.successMessage button:hover{
+    cursor: pointer;
+}

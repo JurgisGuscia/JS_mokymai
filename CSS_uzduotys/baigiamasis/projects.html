@@ -3,11 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script
-        src="https://code.jquery.com/jquery-3.7.1.min.js"
-        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
-        crossorigin="anonymous">
-    </script>
     <link rel="stylesheet" href="./style/main.css">
     <title>CSS baigiamasis</title>
 </head>
@@ -20,120 +15,65 @@
                 <img class="logoTitle" src="./img/logoTitle.png">
             </a>
             <ul class="navBar">
-                <li class="activeNavBarLink"><a href="index.html">home</a></li>
+                <li><a href="index.html">home</a></li>
                 <li><a href="gallery.html">gallery</a></li>
-                <li><a href="projects.html">projects</a></li>
+                <li class="activeNavBarLink"><a href="projects.html">projects</a></li>
                 <li><a href="certificates.html">certificates</a></li>
                 <li><a href="contacts.html">contacts</a></li>
             </ul>
         </div>
     </header>
-    <!-- project preview section -->
-    <div class="homePageProjectSectionWrapper">
-        <div class="homePageProjectSection wrapper">
-            <div class="infoField">
-                <h1>project</h1>
-                <h2>nurtown</h2>
-                <div class="arrowsContainer">
-                    <div class="arrowContainer"><img src="./img/arrow.svg" class="leftArrow"></div>
-                    <div class="arrowContainer darkerArrowContainer"><img src="./img/arrow.svg" class="rightArrow"></div>
-                </div>
-                <div class="lineSeparator"></div>
-                <div class="slideContainer">
-                    <h3>01</h3>
-                    <div class="slideSeparator"></div>
-                    <h3>02</h3>
-                </div>
-            </div>
-            <div class="projectImageContainer">
-                <img class="projectSectionImage" src="./img/bg1.jpg">
-                <a href="#" class="projectSectionLink">Check out<img src="./img/arrow.svg"></a>
-            </div>
-        </div>
-    </div>
-    <!-- about company section -->
-    <div class="aboutCompanySectionWrapper">
-        <div class="wrapper">
-            <div class="aboutCompanySection">
-                <div class="firstAboutColumn">
-                    <img class="img1" src="./img/aboutImg1.jpg">
-                    <img class="img2" src="./img/aboutImg2.jpg">
-                </div>
-                <div class="secondAboutColumn">
-                    <img src="./img/aboutImg3.jpg">
-                </div>
-                <div class="thirdAboutColumn">
-                    <h1>About company</h1>
-                    <p>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-                    </p>
-                    <a href="#">read <img src="./img/arrow.svg"></a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- main goals section -->
-    <div class="goalsSectionWrapper">
-        <div class="wrapper">
-            <div class="goalsSection">
-                <h1>Main goals</h1>
-                <div class="goalWrapper">
-                    <div class="goal"> 
-                        <h1>1</h1>
-                        <p class="firstGoalP">Creating comfortable conditions and improving the quality of customer service</p>
-                    </div>
-                    <div class="goal">
-                        <h1>2</h1>
-                        <p>Constantly improve the quality of services provided by training staff, purchasing new equipment and increased advertising on the market</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
     <!-- our projects section -->
     <div class="ourProjectsSectionWrapper">
         <div class="wrapper">
-            <div class="ourProjectsSection">
-                <h1>Our projects</h1>
+            <div class="ourProjectsSection2">
+                <h1>our</h1>
+                <h2>projects</h2>
+                <div class="projectSeparator"></div>
                 <div class="projectListContainer">
-                    <div class="firstOurProjectImg  ourProjectImg">
-                        <h1>LEISURE CENTER</h1>
-                        <a href="#" class="firstProjectLinkContainer">MORE DETAILS <img src="./img/arrow.svg"></a>
+                    <div class="projectCard">
+                        <img src="./img/mainProjects/1.jpg">
+                        <div class="projectInfoContainer">
+                            <h1>Comprehensive school</h1>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                            <a href="#">LOOK <img src="./img/arrow.svg"></a>
+                        </div>
                     </div>
-                    <img src="./img/ourProject2.png" class="secondOurProjectImg ourProjectImg">
-                    <img src="./img/ourProject3.png" class="thirdOurProjectImg ourProjectImg">
-                    <img src="./img/ourProject4.png" class="fourthOurProjectImg ourProjectImg">
-                    <img src="./img/ourProject5.png" class="fifthOurProjectImg ourProjectImg">
+
+                    <div class="projectCard">
+                        <img src="./img/mainProjects/2.jpg">
+                        <div class="projectInfoContainer">
+                            <h1>Parking for 500 cars</h1>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                            <a href="#">LOOK <img src="./img/arrow.svg"></a>
+                        </div>
+                    </div>
+
+                    <div class="projectCard">
+                        <img src="./img/mainProjects/3.jpg">
+                        <div class="projectInfoContainer">
+                            <h1>Office interior project</h1>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                            <a href="#">LOOK <img src="./img/arrow.svg"></a>
+                        </div>
+                    </div>
+                    <div class="galleryControlContainer">
+                    <div class="slideContainer2">
+                        <h3 class="activeSlide">01</h3>
+                        <div class="slideSeparator"></div>
+                        <h3 class="inActiveSlide">05</h3> 
+                        <div class="arrowContainer"><img src="./img/arrow.svg" class="leftArrow"></div>
+                        <div class="arrowContainer darkerArrowContainer"><img src="./img/arrow.svg" class="rightArrow"></div>
+                    </div>
+                    
                 </div>
-                <div class="ourProjectsLinkContainer">
-                    <a href="#">all projects <img src="./img/arrow.svg"></a>
                 </div>
             </div>
         </div>
     </div>
-    <!-- connect section -->
-    <div class="connectSectionWrapper">
-        <div class="wrapper">
-            <div class="connectSection">
-                <h1>Connect with us</h1>
-                <div class="connectMainSection">
-                    <div class="formSection">
-                        <form action="#" id="contact" method="post">
-                            <input type="text" name="name" placeholder="Name" autocomplete="off">
-                            <input type="text" name="phone" placeholder="Phone Number*"  autocomplete="off">
-                            <input type="email" name="email" placeholder="Email*"  autocomplete="off">
-                            <input type="text" name="interest" placeholder="Product/service of interest"  autocomplete="off">
-                            <textarea name="message" placeholder="Message*"></textarea>
-                            <input type="checkbox">
-                        </form>
-                    </div>
-                    <img src="./img/connectImg.jpg">
-                </div>
-                <p>By submitting an application you agree to the privacy policy</p>
-                <button type="submit" form="contact" class="homeConnectButton">send<img src="./img/arrow.svg"></button>
-            </div>
-        </div>
-    </div>
+
+
+
     <!-- footer section -->
     <footer>
         <div class="wrapper">
@@ -234,8 +174,3 @@
     </footer>
 </body>
 </html>
-<script>
-    $(".homeConnectButton").on("click", e=>{
-        e.preventDefault();
-    });
-</script>
