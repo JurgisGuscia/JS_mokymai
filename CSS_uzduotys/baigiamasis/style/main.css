@@ -25,6 +25,9 @@ html {
     margin: auto;
     padding: 0px 135px;
 }
+.minimizedMenuButton{
+    display: none;
+}
 .body{
     width: 100vw;
     display: flex;
@@ -964,16 +967,16 @@ footer{
 }
 .contactSectionWrapper img{
     position: absolute;
-    right: -280px;
+    right: 0px;
     top: 0px;
-    width: 1319px;
+    width: 800px;
     height: 501px;
     object-fit: cover;
 }
 .contactSectionWrapper svg{
     position: absolute;
-    right: 250px;
-    top: 200px;
+    right: 290px;
+    top: 210px;
     width: 55px;
     height: 55px;
     z-index: 33;
@@ -1229,4 +1232,393 @@ footer{
 }
 .successMessage button:hover{
     cursor: pointer;
+}
+.hideMenu{
+    display: none;
+}
+/* Media queries */
+
+
+@media (max-width: 1399px){ 
+    .wrapper{
+        width: 990px;
+        padding: 0px 10px;
+    }
+    .projectSectionImage{
+        width: 650px;
+    }
+    .thirdAboutColumn h1{
+        width: 270px;
+        line-height: 38px;
+        margin-bottom: 15px;
+    }
+    .thirdAboutColumn p{
+        width: 270px;
+        line-height: 18px;
+    }
+    .secondOurProjectImg{
+        width: 370px;
+        height: 225px;
+    }
+    .thirdOurProjectImg{
+        width: 303px;
+        height: 255px;
+    }
+    .fourthOurProjectImg{
+        width: 303px;
+        height: 255px;
+    }
+    .fifthOurProjectImg{
+        width: 303px;
+        height: 255px;
+    }
+    .projectCard img{
+        width: 500px;
+    }
+    .projectCard{
+        width: 970px;
+    }
+    .projectInfoContainer{
+        width: 450px;
+    }
+    .projectSeparator{
+        width: 100%;
+    }
+    .certificateContainer img{
+        width: 30%;
+    }
+    #mapImage{
+        width: 500px;
+        right: 0px;
+    }
+    #mapTag{
+        right: 150px;
+    }
+    .minimizedMenu{
+        display: none;
+    }
+}
+
+@media (max-width: 992px){ 
+    .wrapper{
+        width: 769px;
+        padding: 0px 10px;
+    }
+    .projectSectionImage{
+        width: 410px;
+    }
+    .aboutCompanySection{
+        flex-flow: column wrap;
+        height: 500px;
+        padding: 0px 10px;
+    }
+    .secondAboutColumn{
+        display: none;
+    }
+    .connectMainSection img{
+        width: 350px;
+    }
+    .column3{
+        width: 130px;
+    }
+    .column4 .svgContainer {
+        flex-flow: column;
+    }
+    .firstOurProjectImg{
+        width: 350px;
+    }
+    .secondOurProjectImg{
+        width: 350px;
+    }
+    .thirdOurProjectImg{
+        width: 350px;
+    }
+    .fourthOurProjectImg{
+        width: 350px;
+    }
+    .fifthOurProjectImg{
+        display: none;
+    }
+    .projectCard img{
+        width: 380px;
+    }
+    .projectCard{
+        width: 755px;
+    }
+    .projectCard p{
+        width: 300px;
+    }
+    .projectCard h1{
+        width: 340px;
+    }
+    .certificateContainer{
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+    .certificateContainer img{
+        width: 40%;
+    }
+    #mapImage{
+        width: 450px;
+        height: 330px;
+        top: 130px;
+    }
+    #mapTag{
+        transform: scale(0.5);
+        top: 260px;
+        right: 140px;
+    }
+    
+}
+@media (max-width: 768px){ 
+    .wrapper{
+        width: 375px;
+    }
+    .navBar{
+        display: none;
+    }    
+    #minimizedMenu{
+        position: absolute;
+        top: 35px;
+        left: 60%;
+        transform: translateX(-50%);
+        flex-flow: column nowrap;  
+        z-index: 999;
+        background: #FBFBFB;
+        border-radius: 2px;
+        padding: 5px;
+    }
+    #minimizedMenu li{
+        display: block; 
+        padding: 5px 0px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    #minimizedMenu li a{
+        color: #333;
+        font-family: hoves;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 12px;
+        letter-spacing: 2.4px;
+        text-transform: uppercase;
+        text-decoration: none;  
+    }
+    .minimizedMenuButton{
+        display: block;
+        border: none;
+        background: none;
+        z-index: 999;
+    }
+    .minimizedMenuButton img{
+        width: 40px;
+    }
+    .hideMenu{
+        display: none;
+    }
+    .showMenu{
+        display: block;
+    }
+    .projectImageContainer{
+        position: absolute;
+        z-index: -1;
+        width: 360px
+    }
+    .projectImageContainer img{
+        width: 100%;
+    }
+    .projectSectionLink img{
+        width: 30px;
+    }
+    .headerSection{
+        z-index: 800;
+    }
+    .firstAboutColumn{
+        display: none;
+    }
+    .goalWrapper{
+        flex-flow: column;
+        width: 350px;
+        gap: 30px;
+    }
+    .goal{
+        width: 100%;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        gap: 0px;
+    }
+    .goal h1{
+        width: 180px;
+    }
+    .goal p{
+        width: 350px;
+    }
+    .connectMainSection img{
+        display: none;
+    }
+    .formSection{
+        width: 360px;
+    }
+    .formSection  form{
+        width: 100%;
+    }
+    .formSection  form input{
+        width: 100%;
+    }
+    .formSection  form textarea{
+        width: 100%;
+    }
+    .topSide{
+        gap: 0px;
+    }
+    .column1{
+        display: none;
+    }
+    .contactRow svg{
+        display: none;
+    }  
+    .column2{
+        width: 100px;
+    }
+    .column3{
+        width: 170px;
+    }
+    .column4{
+        flex-flow: column nowrap;
+        width: 80px;
+        justify-content: flex-start;
+    }
+    .column4 h3{
+        flex-flow: column nowrap;
+        width: 80px;
+        margin: 0px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .column4 .svgContainer{
+        flex-flow: column nowrap;
+        gap: 20px;
+        width: 80px;
+    }
+    .lineSeparator{
+        width: 230px;
+    }
+    .photoGalleryContainer{
+        width: 100%;
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+    .galleryControlContainer{
+        width: 100%;
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+    .projectCard{
+        flex-flow: column nowrap;
+        height: 750px;
+        width: 360px;
+    }
+    .projectCard img{
+        width: 358px;
+    }
+    .ourProjectsSectionWrapper{
+        width: 100%;
+    }
+    .projectInfoContainer{
+        width: 100%;
+    }
+    .ourProjectsSection2{
+        width: 100%;
+    }
+    .certificatesSection h1{
+        font-size: 50px;
+    }
+    .certificatesSection h2{
+        font-size: 50px;
+    }
+    .certificateContainer{
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+    .certificateContainer img{
+        width: 90%;
+    }
+    #mapImage{
+        display: none;
+    }
+    #mapTag{
+        display: none;
+    }
+    .contactSection h1{
+        font-size: 50px;
+    }
+    .contactSection h2{
+        font-size: 50px;
+    }
+    .askQuestion{
+        width: 95%;
+    }
+    .askQuestion form{
+        width: 100%;
+    }
+    .askQuestion form input{
+        width: 100%;
+    }
+    .askQuestion form textarea{
+        width: 100%;
+    }
+    .askQuestion p{
+        width: 70%;
+    }
+    .askQuestion button{
+        width: 100%;
+    }
+    .closeFormButton{
+        right: -40%;
+    }
+    .successMessage{
+        width: 90%;
+    }
+    .successMessage p{
+        width: 100%;
+    }
+    .successMessage button{
+        width: 90%;
+    }
+}
+
+
+
+@media (max-width: 375px){ 
+    .wrapper{
+        display: none;
+    }
+    footer{
+        display: none;
+    }
+    header{
+        display: none;
+    }
+    body{
+        display: block;
+    }
+    body::after{
+        display: block;
+        content: "BUY NEW PHONE";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        text-align: center;
+        color: #333;
+        font-family: hoves;
+        font-size: 64px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 64px;
+        text-transform: uppercase;
+    }
 }

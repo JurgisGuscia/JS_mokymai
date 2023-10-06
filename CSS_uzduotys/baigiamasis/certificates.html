@@ -2,7 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0">
+    <script
+        src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+        crossorigin="anonymous">
+    </script>
     <link rel="stylesheet" href="./style/main.css">
     <title>CSS baigiamasis</title>
 </head>
@@ -19,6 +24,14 @@
                 <li><a href="gallery.html">gallery</a></li>
                 <li><a href="projects.html">projects</a></li>
                 <li class="activeNavBarLink"><a href="certificates.html">certificates</a></li>
+                <li><a href="contacts.html">contacts</a></li>
+            </ul>
+            <button class="minimizedMenuButton"><img src="./img/menu.png"></button>
+            <ul id="minimizedMenu" class="hideMenu">
+                <li><a href="index.html">home</a></li>
+                <li><a href="gallery.html">gallery</a></li>
+                <li><a href="projects.html">projects</a></li>
+                <li><a href="certificates.html">certificates</a></li>
                 <li><a href="contacts.html">contacts</a></li>
             </ul>
         </div>
@@ -147,3 +160,12 @@
     </footer>
 </body>
 </html>
+<script>
+    $(".homeConnectButton").on("click", e=>{
+        e.preventDefault();
+    });
+    $(".minimizedMenuButton").on("click", e=>{
+        $("#minimizedMenu").toggleClass("hideMenu");
+        $("#minimizedMenu").toggleClass("showMenu");
+    });
+</script>

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0">
     <link rel="stylesheet" href="./style/main.css">
     <script
         src="https://code.jquery.com/jquery-3.7.1.min.js"
@@ -57,6 +57,14 @@
                 <li><a href="certificates.html">certificates</a></li>
                 <li class="activeNavBarLink"><a href="contacts.html">contacts</a></li>
             </ul>
+            <button class="minimizedMenuButton"><img src="./img/menu.png"></button>
+            <ul id="minimizedMenu" class="hideMenu">
+                <li><a href="index.html">home</a></li>
+                <li><a href="gallery.html">gallery</a></li>
+                <li><a href="projects.html">projects</a></li>
+                <li><a href="certificates.html">certificates</a></li>
+                <li><a href="contacts.html">contacts</a></li>
+            </ul>
         </div>
     </header>
     <!-- contact section -->
@@ -72,8 +80,8 @@
                 <button class="feedBackButton">feedback</button>
             </div>
         </div>
-        <img src="./img/map.jpg">
-        <svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" viewBox="0 0 55 55" fill="none">
+        <img id="mapImage" src="./img/map.jpg">
+        <svg id="mapTag" xmlns="http://www.w3.org/2000/svg" width="55" height="55" viewBox="0 0 55 55" fill="none">
             <circle cx="27.5" cy="27.5" r="27.5" fill="#CECECE" fill-opacity="0.73"/>
             <circle cx="28" cy="28" r="15" fill="#333333"/>
             </svg>
@@ -197,5 +205,15 @@
         e.preventDefault();
         $(".backdrop").addClass("hidden");
         $(".successMessage").addClass("hidden");
+    });
+</script>
+
+<script>
+    $(".homeConnectButton").on("click", e=>{
+        e.preventDefault();
+    });
+    $(".minimizedMenuButton").on("click", e=>{
+        $("#minimizedMenu").toggleClass("hideMenu");
+        $("#minimizedMenu").toggleClass("showMenu");
     });
 </script>
