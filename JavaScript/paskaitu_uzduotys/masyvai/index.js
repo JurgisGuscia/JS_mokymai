@@ -162,3 +162,8 @@ const array141 = [
   5, 8, 4, 1, 8, 4, 6, 8, 4, 7, 8, 5, 9, 6, 4, 5, 4, 8, 6, 8, 1, 4, 5, 6, 8, 9,
   10, 5, 5, 4, 7,
 ];
+array141.forEach((mark) =>
+  mark >= 5
+    ? console.log(`${mark} - teigiamas`)
+    : console.log(`${mark} - neigiamas, iki teigiamo truko ${5 - mark}`)
+);
