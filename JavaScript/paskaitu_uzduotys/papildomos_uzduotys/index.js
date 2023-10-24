@@ -25,7 +25,7 @@ console.log(
 //4 uzduotis==================================================
 //Parašykite programą, kuri paverstų kilometrus į mylias.
 let kilometers = 53;
-const convertKmToMile = (km) => (km * 1.6).toFixed(2);
+const convertKmToMile = (km) => (km * 0.62).toFixed(2);
 console.log(
   `4 Uzduotis: ${kilometers}km = ${convertKmToMile(kilometers)} miles`
 );
@@ -62,13 +62,13 @@ console.log(
 
 //8 uzduotis==================================================
 //Algos skaiciuokle ivesti alga ir mokesciu %, + statiniai mokesciai 4.3%
-// document.getElementById("calculateButton").addEventListener("click", () => {
-//   let salary = document.getElementById("alga").value;
-//   let tax = document.getElementById("mokesciai").value;
-//   document.getElementById("salaryResultDisplay").innerText = `Alga i rankas: ${
-//     (((salary * (100 - tax)) / 100) * (100 - 4.3)) / 100
-//   }`;
-// });
+document.getElementById("calculateButton").addEventListener("click", () => {
+  let salary = document.getElementById("alga").value;
+  let tax = document.getElementById("mokesciai").value;
+  document.getElementById("salaryResultDisplay").innerText = `Alga i rankas: ${
+    (((salary * (100 - tax)) / 100) * (100 - 4.3)) / 100
+  }`;
+});
 
 //9 uzduotis==================================================
 //termometro konverteris tarp celcijaus ir farenheito.
@@ -121,7 +121,7 @@ const table = {
   eight: 8,
   nine: 9,
 };
-let input = "zero;three;five;eight;one";
+let input = "zero;three;five;six;eight;one";
 let trueInput = input.split(";");
 let output = "";
 trueInput.forEach((digit) => {
@@ -130,7 +130,7 @@ trueInput.forEach((digit) => {
 console.log(`12 Uzduotis: ivestis->${input}, isvestis->${output}`);
 
 //13 uzduotis=================================================
-//???Create a script that displays 1-2-3-4-5-6-7-8-9-10 on one line. There will be no hyphen(-) at starting and ending position.
+//Create a script that displays 1-2-3-4-5-6-7-8-9-10 on one line. There will be no hyphen(-) at starting and ending position.
 const makeALine = (wantedNumber) => {
   let str = "";
   for (let i = 1; i < wantedNumber + 1; i++) {
