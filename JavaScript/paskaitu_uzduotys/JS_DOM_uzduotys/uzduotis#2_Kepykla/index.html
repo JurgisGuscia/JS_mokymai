@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Kepykla</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header cornerWrap">Kepykla</div>
+        <div class="main cornerWrap">
+            <h2>Pradinė informacija</h2>
+            <div class="section">
+                <p>Darbuotojų skaičius:</p>
+                <input type="number" id="empl">
+            </div>
+            <div class="section">
+                <p>Vienas darbuotojas duonos kepalų per diena:</p>
+                <input type="number" id="breadPerEmpl">
+            </div>
+            <div class="section">
+                <p>Kiek užsakymų turi būti įgyvendinta:</p>
+                <input type="number" id="order">
+            </div>
+            <div class="controlWrapper">
+                <button id="calc">Skaičiuoti</button>
+                <button id="reset">Valyti</button>
+            </div>
+        </div>
+        <div class="footer cornerWrap">
+            <h3>Skaičiavimai</h3>
+            <span id="error">Kol kas nieko nėra.</span>
+            <ul id="displayList" class="hide">
+                <li>Kepykla per dieną spės pagamint: <span id="capacityOutput"></span></li>
+                <li>Jai reikia spėti pagaminti: <span id="orderOutput"></span></li>
+                <li>Ar spės pagaminti? <span id="succesOutput"></span></li>
+            </ul>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
