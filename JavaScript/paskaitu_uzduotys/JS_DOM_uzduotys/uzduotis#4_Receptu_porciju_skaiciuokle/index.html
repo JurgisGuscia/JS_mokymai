@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Receptai</title>
+</head>
+<body>
+<div class="wrapper">
+    <div class="section">
+        <h1>Pasirinkite recepta:</h1>
+        <div class="cardContainer">
+            <div id="1" class="card">
+                <svg id="svg1" class="hide" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
+                    <circle cx="12.5" cy="12.5" r="12.5" fill="#0FC261"/>
+                    <line x1="6.35355" y1="9.64645" x2="12.3536" y2="15.6464" stroke="white"/>
+                    <line x1="11.6464" y1="15.6464" x2="19.6464" y2="7.64645" stroke="white"/>
+                  </svg>
+                <img src="1.jpg" alt="vistiena su salotom">
+                <h2>Vištiena su salotom</h2>
+                <p>Amet et at aliquam duis ut morbi turpis. Quis cursus tincidunt risus purus faucibus elit ut. Pellentesque montes.</p>
+            </div>
+            <div id="2" class="card">
+                <svg id="svg2" class="hide" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
+                    <circle cx="12.5" cy="12.5" r="12.5" fill="#0FC261"/>
+                    <line x1="6.35355" y1="9.64645" x2="12.3536" y2="15.6464" stroke="white"/>
+                    <line x1="11.6464" y1="15.6464" x2="19.6464" y2="7.64645" stroke="white"/>
+                  </svg>
+                <img src="2.jpg" alt="Tortas su melynem">
+                <h2>Tortas su mėlynėm</h2>
+                <p>Amet et at aliquam duis ut morbi turpis. Quis cursus tincidunt risus purus faucibus elit ut. Pellentesque montes.</p>
+            </div>
+            <div id="3" class="card">
+                <svg id="svg3" class="hide" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
+                    <circle cx="12.5" cy="12.5" r="12.5" fill="#0FC261"/>
+                    <line x1="6.35355" y1="9.64645" x2="12.3536" y2="15.6464" stroke="white"/>
+                    <line x1="11.6464" y1="15.6464" x2="19.6464" y2="7.64645" stroke="white"/>
+                  </svg>
+                <img src="3.jpg" alt="Makaronai su mesa">
+                <h2>Makaronai su mėsa</h2>
+                <p>Amet et at aliquam duis ut morbi turpis. Quis cursus tincidunt risus purus faucibus elit ut. Pellentesque montes.</p>
+            </div>
+        </div>
+    </div>
+    <div class="section">
+        <h1 id="portionTitle">Kiek porcijų gaminsite?</h1>
+        <input type="range" min="1" max="10" value="1" class="slider" id="myRange">
+        <p id="sliderValue">1</p>
+    </div>
+    <div class="section">
+        <h1>Jums reikės šių ingredientų, tokiais kiekiais:</h1>
+        <div id="displayScreen"></div>
+    </div>
+</div>
+
+<script src="index.js"></script>
+</body>
+</html>
