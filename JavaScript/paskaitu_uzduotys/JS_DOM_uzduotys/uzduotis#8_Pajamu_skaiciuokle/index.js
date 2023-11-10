@@ -105,7 +105,7 @@ document.getElementById("addNew").addEventListener("click", () => {
 });
 
 document.getElementById("addImputButton").addEventListener("click", () => {
-  const amountGiven = document.getElementById("amountInput").value;
+  const amountGiven = parseInt(document.getElementById("amountInput").value);
   const type = document.getElementById("in").checked ? "Pajamos" : "Išlaidos";
   let currentdate = new Date();
   let datetime =
