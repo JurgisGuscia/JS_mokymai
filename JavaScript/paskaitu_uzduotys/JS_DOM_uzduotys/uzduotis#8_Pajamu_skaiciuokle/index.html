@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Pajamu skaiciukle</title>
+</head>
+<body>
+<div id="backdrop" class="backdrop hide"></div>
+<div id="entryForm" class="entryForm hide">
+    <h3>Naujas įrašas</h3>
+    <p>ID:<span id="idInput">1</span></p>
+    <div class="radioWrapper">
+        <input type="radio" name="type" id="in" value="1" checked>
+        <label for="in">Pajamos</label>
+    </div>
+    <div class="radioWrapper">
+        <input type="radio" name="type" id="out" value="2">
+        <label for="out">Išlaidos</label>
+    </div>
+    <input id="amountInput" class="amountInput" type="number" placeholder="Suma">
+    <p>Data: <span id="dateInput">2022-03-15 22:15:48</span></p>
+    <div class="inputControlContainer">
+        <button id="addImputButton">Įterpti</button>
+        <button id="cancelInputButton">Atšaukti</button>
+    </div>
+</div>
+<div class="wrapper">
+    <h1>Pajamų skaičiuoklė</h1>
+    <div id="paymentDisplay" class="paymentDisplay">
+        
+    </div>
+    <div class="summary">
+        Galutinis likutis: <span id="totalLeft"></span> ( +<span id="totalIn"></span> &#8364; / -<span id="totalOut"></span> &#8364;)
+    </div>
+</div>
+<div class="control">
+    <h2>Valdymas</h2>
+    <button id="addNew">Pridėti įrašą</button>
+    <button id="addRandom">Pridėti atsitiktinį</button>
+    <button id="remove">Naikinti paskutinį</button>
+</div>
+<script src="index.js"></script>
+</body>
+</html>

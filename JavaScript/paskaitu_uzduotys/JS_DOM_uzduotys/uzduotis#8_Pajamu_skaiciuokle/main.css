@@ -1,0 +1,171 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    cursor: default;
+}
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    padding-top: 50px;
+    background-color: #EEE;
+    overflow-x: hidden;
+}
+.wrapper{
+    width: 800px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+.wrapper h1{
+    text-align: left;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.paymentDisplay{
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.card{
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 20px 40px;
+    background-color: #FEFEFE;
+    margin-top: 3px;
+}
+
+.id{
+    font-size: 0.9rem;
+}
+.type{
+    font-size: 1.2rem;
+}
+.ammount{
+    font-size: 1.5rem;
+}
+.date{
+    font-size: 1rem;
+}
+
+.summary{
+    width: 100%;
+    text-align: left;
+    padding: 20px 40px;
+    font-size: 1.7rem;
+    font-weight: bold;
+    background-color: #CCC;
+}
+.control{
+    border: solid #CCC 1px;
+    display: flex;
+    width: 170px;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    left: calc(50% + 420px);
+
+}
+.control h2{
+    background-color: #CCC;
+    width: 100%;
+    padding: 10px 20px;
+    font-weight: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.control button{
+    width: 90%;
+    padding: 10px 20px;
+    margin: 5px 0px;
+    border: solid 1px #CCC;
+}
+.control button:hover{
+    background-color: #CCC;
+}
+.green{
+    color: green;
+}
+.red{
+    color: red;
+}
+.hide{
+    display: none;
+}
+.backdrop{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2;
+}
+.entryForm{
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    background-color: #CCC;
+    width: 300px;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: 3;
+    
+    align-self: center;
+    padding: 60px 40px 0px;
+    gap: 10px;
+}
+.entryForm h3{
+    font-size: 1.5rem;
+    width: 100%;
+    text-align: center;
+    background-color: #222;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 50px;
+    padding-top: 12px;
+    color: #CCC;
+}
+.amountInput{
+    width: 200px;
+    height: 35px;
+    padding: 5px 10px;
+    font-size: 1.2rem;
+}
+.inputControlContainer{
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+.inputControlContainer button{
+    padding: 7px 14px;
+    border: solid #222 1px;
+    width: 80px;
+    margin-bottom: 15px;
+}
+.inputControlContainer button:hover{
+    background-color: #222;
+    color:#EEE;
+}
+.entryForm p{
+    margin: 15px 0px;
+}
+.radioWrapper {
+    margin: 15px 0px;
+}
