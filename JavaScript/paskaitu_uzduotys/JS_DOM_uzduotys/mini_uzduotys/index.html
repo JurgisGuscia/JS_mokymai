@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>mini_uzduotys</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="section">
+            <div id="target1" class="description">1. Sukurti mygtuką ir jį paspaudus, keisti teksto spalvą;</div>
+            <div class="solution"><button id="button1" class="button">Paspausk</button></div>
+        </div>
+        <div class="section">
+            <div class="description">2. Sukurti langelį (box) ir jį paspaudus, keisti jo dydį;</div>
+            <div class="solution"><div id="target2" class="box"></div></div>
+        </div>
+        <div class="section">
+            <div class="description">3. Sukurti mygtuką ir jį paspaudus, keisti kitą elemento teksto turinį;</div>
+            <div class="solution">
+                <button id="button2" class="button">Paspausk</button>
+                <span id="changeText" class="changeText">Tekstas</span>
+            </div>
+        </div>
+        <div class="section">
+            <div class="description">4. Sukurti mygtuką, jam priskirti event listener'į ir pakeisti teksto dydį;</div>
+            <div class="solution">
+                <button id="button3" class="button">Paspausk</button>
+                <span id="changeText2" class="changeText">Tekstas</span>
+            </div>
+        </div>
+        <div class="section">
+            <div class="description">5. Sukurti input lauką ir mygtuką, kurį paspaudus, pakeisti lauko reikšmę;</div>
+            <div class="solution">
+                <button id="button4" class="button">Paspausk</button>
+                <input id="changeInput" type="text" class="changeInput" value="Pradinis">
+            </div>
+        </div>
+        <div class="section">
+            <div class="description">6.Dinamiškai pridėti elementus:
+                Sukurkite tuščią sąrašą ir mygtuką.
+                Pridėkite JavaScript kodą, kad paspaudus ant mygtuko, į sąrašą būtų pridėtas naujas elementas.</div>
+            <div class="solution">
+                <button id="button5" class="button">Paspausk</button>
+                <ul id="list" class="list"></ul>
+            </div>
+        </div>
+        <div class="section">
+            <div class="description">7. Formos įvykiai:
+                Sukurkite formą su įvedimo input laukais ir mygtuku.
+                Pridėkite JavaScript kodą, kad paspaudus mygtuką, būtų rodoma įvedimo input lauko reikšmė arba pranešimas.
+                </div>
+            <div class="solution">
+                <form id="inputForm1" class="inputForm1" action="#">
+                    <input id="inputValue" type="text">
+                    <button id="button6" class="button">Paspausk</button>
+                </form>
+                <div id="inputValueDisplay" class="inputValueDisplay">
+                        
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="description">8.Paslėpti/Rodyti Tekstą
+                Sukurkite HTML puslapį su mygtuku ir teksto elementu. Parašykite JavaScript funkciją, kuri paspaudus mygtuką paslėptų arba parodytų tekstą.
+                </div>
+            <div class="solution">
+                <button id="button7" class="button">Paspausk</button>
+                <div class="secretTextContainer"><span id="showHideText">Slapta zinute</span></div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="description">
+                9. Skaičiuoti Paspaudimus
+                Sukurkite HTML puslapį su mygtuku ir skaitliuko elementu. Parašykite JavaScript funkciją, kuri kiekvieną kartą paspaudus mygtuką padidintų skaitliuko reikšmę.
+            </div>
+            <div class="solution">
+                <button id="button8" class="button">Paspausk</button>
+                <div class="secretTextContainer"><span id="showCounter">1</span></div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="description">
+                10. Skaičiuoti Teksto Ilgį
+                Sukurkite HTML puslapį su teksto lauku ir mygtuku, kuris skaičiuotų įvesto teksto ilgį. Parašykite JavaScript funkciją, kuri tai atliktų ir parodytų rezultatą.
+            </div>
+            <div class="solution">
+                <div class="textCountLeftSide">
+                    <textarea id="textInput" cols="10" rows="2"></textarea>
+                    <button id="button9" class="button">Paspausk</button>
+                </div>
+                <div class="secretTextContainer"><span id="showTextCount"></span></div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="description">
+                11. Dinaminis Mygtukų Pridėjimas:
+                Sukurkite mygtuką, kurį paspaudus, dinamiškai pridedamas naujas mygtukas su unikaliu ID.
+            </div>
+            <div class="solution">
+                <button id="button10" class="button">Paspausk</button>
+                <div id="buttonContainer" class="buttonContainer">
+
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="description">
+                12. Sąrašo Elemento Trynimas:
+                Sukurkite sąrašą su mygtukais, kurie leidžia trinti atitinkamus sąrašo elementus.
+            </div>
+            <div class="solution">
+                <ul id="listContainer" class="list">                   
+                    
+                </ul>
+            </div>
+        </div>
+        <div class="section">
+            <div class="description">
+                13. Lango Priskyrimas įvykiui:
+                Sukurkite puslapį, kuriame yra keletas langų ir mygtukų, o paspaudus mygtuką, pasikeičia aktyvus langas.
+            </div>
+            <div id="activeWindowContainer" class="solution">
+                
+            </div>
+        </div>
+        <div class="section">
+            <div class="description">
+                14. Paprasta Paveikslėlių Galerija:
+                Sukurkite HTML puslapį su mygtuku ir paveikslėlių konteineriu. Mygtuko paspaudimas turi keisti dabartinio paveikslėlio šaltinį.
+            </div>
+            <div class="solution">
+                <div id="photoGallery" class="photoGallery"></div>
+                <div class="photoControl">
+                    <button id="photoControlButton" class="button">Spausk</button>
+                    <img id="imgPlaceHolder" src="https://picsum.photos/id/237/90/200">
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="description">
+                15. Laiko Rodymas:
+                Sukurkite puslapį su mygtuku ir teksto lauku.
+                Pridėkite JavaScript kodą, kad paspaudus mygtuką, būtų rodomas dabartinis laikas teksto lauke.</div>
+            <div class="solution">
+                <button id="showTime" class="button">Spausk</button>
+                <textarea id="timeOutput" class="timeOutput"></textarea>
+            </div>
+        </div>
+        <div class="section">
+            <div class="description">
+                16. Pateikimo Forma:
+                Sukurkite formą su įvesties lauku ir mygtuku.
+                Pridėkite JavaScript kodą, kad paspaudus mygtuką, įvesties lauko turinys būtų pateiktas (pvz., konsolėje arba kitoje vietoje).
+                </div>
+            <div class="solution">
+                <input id="mirrorContent" class="mirrorContent" type="text">
+                <button id="mirrorTheContent" class="button">Spausk</button>
+            </div>
+        </div>
+        <div class="section">
+            <div class="description">
+                17. BMI Skaičiuoklė:
+                Sukurkite HTML puslapį su įvedimo laukais kūno svorio (kg) ir ūgio (m) įvedimui, mygtuku "Skaičiuoti BMI" ir vieta, kur bus rodomas rezultatas.
+            </div>
+            <div class="solution">
+                <div class="bmiLeftSide">
+                    <input id="weightInput" type="number" placeholder="Svoris (kg.)">
+                    <input id="heightInput" type="number" placeholder="Ugis (m.)">
+                    <button id="calcBMI" class="button">Spausk</button>
+                </div>
+                <div id="bmiRightSide" class="bmiRightSide">
+                    
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="description">
+                18. Kelionės kainos skaičiuoklė:
+                Sukurkite internetinę kelionės kainos skaičiuoklę, kurioje vartotojai gali įvesti šiuos duomenis:
+                Kelionės atstumą (pvz., kilometrais arba myliomis).
+                Kuro sąnaudas (pvz., litrais arba galonais).
+                Kuro kainą (už litrą arba už galoną).
+                Sistema turi apskaičiuoti bendras kelionės išlaidas ir pateikti vartotojui rezultatą.</div>
+            <div class="solution">
+                <div class="bmiLeftSide">
+                    <input id="mkInput" type="number" placeholder="Atstumas (km.)">
+                    <input id="litrInput" type="number" placeholder="Kuro sanaudos (litr.)">
+                    <input id="priceInput" type="number" placeholder="Kuro kaina (eur)">
+                    <button id="calcExp" class="button">Spausk</button>
+                </div>
+                <div id="expRightSide" class="bmiRightSide">
+                    
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="description">
+                19. Užsakymo forma:
+                Sukurkite internetinę užsakymo formą, kurią vartotojai gali panaudoti pirkiniams internetinėse parduotuvėse. Forma turėtų leisti vartotojui:
+                Pridėti prekių pavadinimus.
+                Įvesti prekių kiekius.
+                Įvesti prekių kainas.
+                Galutiniame rezultate turi būti rodoma visų prekių sąrašas su kiekvienos prekės pavadinimu, kiekiu, kaina ir bendra suma už tą prekę.
+                </div>
+            <div class="solution">
+                <div class="bmiLeftSide">
+                    <form>
+                        <input id="itemInput" type="text" placeholder="Preke">
+                        <input id="ammountInput" type="number" placeholder="Kiekis">
+                        <input id="itemPriceInput" type="number" placeholder="Kaina">
+                        <button id="addItem" class="button">Spausk</button>
+                    </form>
+                </div>
+                <div class="additionalAlign">
+                    <ul id="itemList" class="itemList">
+                    
+                    </ul>
+                    <div id="totalItemCost" class="totalItemCost">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="description">
+                20. Sąskaitų skaičiuoklė:
+                Sukurkite internetinę sąskaitų skaičiuoklę, kuri leidžia vartotojams įvesti šią informaciją:
+                Sąskaitos numerį.
+                Sumą.
+                Mokėjimo terminą.
+                Papildomai, sistema turi turėti funkcijas:
+                Apskaičiuoti bendrą sąskaitų sumą.
+                Suteikti galimybę vartotojui peržiūrėti visų įvestų sąskaitų sąrašą. 
+                
+                </div>
+            <div class="solution">
+                <div class="topSide">
+                    <input id="checkNumberInput" type="text" placeholder="Numeris">
+                    <input id="checkAmmountInput" type="number" placeholder="Suma">
+                    <input id="checkDateInput" type="date">
+                    <button id="addNewCheck" class="button">Spausk</button>
+                </div>
+                <div class="bottomSide">
+                    <div class="bottomHalf bottomLeft">
+                        <button id="calculateCheckTotal" class="button">Skaiciuoti</button>
+                        <div id="totalSumOutput">Viso: 0 Eur</div>
+                    </div>
+                    <div class="bottomHalf bottomRight">
+                        <button id="showCheckList" class="button">Atnaujinti</button>
+                        <ul id="checkListOutput" class="checkListOutput">
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
