@@ -1,0 +1,157 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    width: 100vw;
+    min-height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+}
+.wrapper{
+    width: 1320px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items:center;
+}
+.header{
+    width: 100%;
+    border-bottom: solid 1px #c4c4c4;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+}
+.header input{
+    display: none;
+}
+.controlLabel{
+    display: flex;
+    width: 300px;
+    height: 48px;
+    justify-content: center;
+    align-items: center;
+    -webkit-user-select: none;  
+    -moz-user-select: none;    
+    -ms-user-select: none;      
+    user-select: none;
+    position: relative;
+    bottom: -2px;
+    border-bottom: solid 3px rgba(255,255,255,0.0);
+}
+.controlLabel:hover{
+    cursor: pointer;
+}
+.active{
+    background: linear-gradient(180deg, rgba(62, 148, 31, 0.00) 0%, rgba(62, 148, 31, 0.15) 100%);
+    color: #3E941F;
+    border-bottom: solid 3px #3E941F;
+}
+.hide{
+    display: none!important;
+}
+.content{
+    margin-top: 70px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-self: flex-start;
+    width: 1320px;
+
+}
+.content img{
+    width: 648px;
+    height: 383px;
+}
+.span1{
+    color: #666;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+}
+.span2{
+    color: #666;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    max-width: 167px;
+}
+.span3{
+    color: #666;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    width: 90px; 
+}
+.table{
+    width: 648px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+.tableHeader{
+    width: 100%;
+    padding: 12px 40px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 2px solid #333;
+    border-bottom: 2px solid #333;
+}
+.table div{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    width: 100%;
+    padding: 12px 40px;
+}
+.tableHeader span{
+    color: #333;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    max-width: 190px;
+}
+.tableRow{
+    border-bottom: 1px solid #999;
+}
+.tableLastRow{
+    border-bottom: 1px solid #999;
+}
+
+.tableLastRow .span2{
+    width: 222px;
+}
+.planGallery{
+    margin-top: 70px;
+    width: 1000px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 32px;
+}
+.cell{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.cell span{
+    color: #333;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+}
+.cell img{
+    width: 1000px;
+    height: 344px;
+}

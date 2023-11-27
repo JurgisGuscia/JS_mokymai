@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <title>warehouse</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <input id="floor1" name="control" type="radio">
+            <label id="floor1Label" for="floor1" class="controlLabel active">1 Sandėlio aukštas</label>
+            <input id="floor2" name="control" type="radio">
+            <label id="floor2Label" for="floor2" class="controlLabel">2 Sandėlio aukštas</label>
+            <input id="management" name="control" type="radio">
+            <label id="managementLabel"  for="management" class="controlLabel">Administracinės patalpos</label>
+        </div>
+        <div id="content1" class="content">
+            <div class="table">
+                <div class="tableHeader">
+                    <span class="span1">Sandėlio zona</span>
+                    <span class="span2">Sandėlio plotas, kv. m</span>
+                    <span class="span3">Rampos</span>
+                </div>
+                <div class="tableRow">
+                    <span class="span1">B</span>
+                    <span class="span2">6 963,29</span>
+                    <span class="span3">5 rampos</span>
+                </div>
+                <div class="tableRow">
+                    <span class="span1">C</span>
+                    <span class="span2">3 371,05</span>
+                    <span class="span3">5 rampos</span>
+                </div>
+                <div class="tableRow">
+                    <span class="span1">D</span>
+                    <span class="span2">3 300,79</span>
+                    <span class="span3">5 rampos bei 1 šoninė</span>
+                </div>
+                <div class="tableLastRow">
+                    <span class="span1">E</span>
+                    <span class="span2">17,24 (bendrosios buitinės patalpos)</span>
+                </div>
+            </div>
+            <img src="1.jpg">
+        </div>
+
+        <div id="content2" class="content hide">
+            <div class="table">
+                <div class="tableHeader">
+                    <span class="span1">Sandėlio zona</span>
+                    <span class="span2">Socialinės patalpos antresolėse, kv. m</span>
+                    <span class="span3">Rezervinis plotas antresolėse, kv. m</span>
+                </div>
+                <div class="tableRow">
+                    <span class="span1">B</span>
+                    <span class="span2">92,92</span>
+                    <span class="span3">578,50</span>
+                </div>
+                <div class="tableRow">
+                    <span class="span1">C</span>
+                    <span class="span2">151,04</span>
+                    <span class="span3">390,46</span>
+                </div>
+                <div class="tableRow">
+                    <span class="span1">D</span>
+                    <span class="span2">151,78</span>
+                    <span class="span3">390,46</span>
+                </div>
+            </div>
+            <img src="2.jpg">
+        </div>
+
+        <div id="content3" class="planGallery hide">
+            <div class="cell">
+                <span>0 aukštas</span>
+                <img src="3.jpg">
+            </div>
+            <div class="cell">
+                <span>1 aukštas</span>
+                <img src="4.jpg">
+            </div>
+            <div class="cell">
+                <span>2 aukštas</span>
+                <img src="5.jpg">
+            </div>
+            <div class="cell">
+                <span>3 aukštas</span>
+                <img src="6.jpg">
+            </div>
+        </div>
+
+    </div>
+<script src="index.js"></script>
+</body>
+</html>
