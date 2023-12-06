@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Spelione
+    </title>
+</head>
+<body>
+    <div id="mainScreen" class="mainScreen">
+        <img class="mainScreenImg" src="1.jpg">
+        <div class="rightSide">
+            <div id="helperContainer" class="helperContainer hide">
+                <img class="helperContainerImg" src="head.png">
+                <div class="info">
+                    <h1 class="infoHeader">Deja, Neatspėjote!</h1>
+                    <p>Spėkite <span id="help" class="help"></span> skaičių.</p>
+                </div>
+            </div>
+            <h1 class="mainHeading">Spėkite skaičių tarp 1 ir 100</h1>
+            <input id="numberInput" type="number" min="1" max="100" placeholder="pvz., 100">
+            <p>Įveskite skaičių nuo 1 iki 100</p>
+            <input type="button" value="Spėti" id="button" class="button" disabled >
+        </div>
+    </div>
+    <div id="gameOverScreen" class="gameOverScreen hide">
+        <img class="gameOverHead" src="head2.png">
+        <h1 class="gameOverHeading">Atspėjote!</h1>
+        <p class="gameOverP">Atspėti jums pavyko iš <span id="gameOverGuessCount" class="gameOverGuessCount"></span>!</p>
+        <button id="replay" class="replay">Žaisti iš naujo</button>
+        <dotlottie-player id="lottie" src="https://lottie.host/ff307f67-1d21-4ba6-be16-450839467d5a/FQA1EEsLHp.json" background="transparent" speed="1" style="width: 300px; height: 300px;"></dotlottie-player>
+    </div>
+    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+    <script src="index.js"></script>
+</body>
+</html>
