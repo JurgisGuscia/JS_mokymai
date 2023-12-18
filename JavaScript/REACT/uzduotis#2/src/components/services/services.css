@@ -1,0 +1,17 @@
+.servicesContainer{
+    width: 1000px;
+    margin: 50px auto;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+    gap: 30px;
+}
+.servicesContainer h1{
+    margin-bottom: 50px;
+}
+.serviceListContainer{
+    width: 1000px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}

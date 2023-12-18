@@ -1,0 +1,10 @@
+.serviceItem{
+    width: 30%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+    border: solid black 1px;
+    padding: 20px;
+}

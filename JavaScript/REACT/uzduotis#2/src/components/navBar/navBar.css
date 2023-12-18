@@ -1,0 +1,25 @@
+.navBarContainer{
+    width: 1000px;
+    margin: 50px auto;
+}
+.navBarListContainer{
+    list-style: none;
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 20px;
+}
+.navBarContainer h1{
+    margin-bottom: 50px;
+}
+.navBarLinkItem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    border: solid black 1px;
+}
+.navBarLinkItem:hover{
+    cursor: pointer;
+    color: #fff;
+    background-color: #000;
+}
