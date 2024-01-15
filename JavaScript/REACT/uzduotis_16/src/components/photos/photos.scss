@@ -1,0 +1,24 @@
+.photoViewContainer{
+    width: 800px;
+    margin:auto;
+    display: flex;
+    flex-flow: column nowrap;
+
+    padding-top: 100px;
+    gap: 20px;  
+    justify-content: center;
+    align-items: center;
+        
+    .photoContainer{
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        gap: 20px;  
+        justify-content: center;
+        
+        img{
+            width: 200px;
+            height: 200px;
+        }
+    }
+}

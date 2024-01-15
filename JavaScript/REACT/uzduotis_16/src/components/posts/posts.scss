@@ -1,0 +1,9 @@
+.postsContainer{
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    padding-top: 100px;
+    align-items: center;  
+    gap: 10px;  
+}

@@ -1,0 +1,10 @@
+.userCard{
+    width: 300px;
+    min-height: 200px;
+    box-shadow: 10px 10px 35px -6px rgba(68,68,68,0.75);
+    -webkit-box-shadow: 10px 10px 35px -6px rgba(68,68,68,0.75);
+    -moz-box-shadow: 10px 10px 35px -6px rgba(68,68,68,0.75);
+    display: flex;
+    flex-flow: column nowrap;
+    
+}

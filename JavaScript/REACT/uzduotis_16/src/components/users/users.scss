@@ -1,0 +1,12 @@
+.usersContainer{
+    width: 800px;
+    margin:auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 100px;
+    gap: 20px;  
+    justify-content: center;
+    align-items: flex-start;
+}

@@ -1,0 +1,21 @@
+.navigation{
+    display: flex;
+    flex-flow: column nowrap;
+    width: 210px;
+    min-height: 100dvh;
+    justify-content: flex-start;
+    padding-top: 50px;
+    gap: 5px;
+    .link{
+        width: 160px;
+        text-decoration: none;
+        color: #444;
+        border: solid #444 1px;
+        padding: 10px 20px;
+        transition: ease-in-out 0.15s;
+        &:hover{
+            background-color: #444;
+            color: #ccc;
+        }
+    }
+}
