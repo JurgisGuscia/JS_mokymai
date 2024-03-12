@@ -1,0 +1,68 @@
+@import "../../variables.scss";
+
+.controlWindowContainer{
+    width: 350px;
+    height: 100%;
+    border-left: solid 1px $third-color;
+    background-color: #242526;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    overflow: hidden;
+    flex-shrink: 0;
+    flex-grow: 0;
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
+    ::-webkit-scrollbar-track {
+        background: #242526;
+    }
+    
+    ::-webkit-scrollbar-thumb {
+        background: #121212;
+        border-radius: 5px;
+    }
+    .userListContainer{
+        padding-top: 10px;
+        width: 350px;
+        height: 55%;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 20px;
+        border-bottom: solid 1px $third-color;
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+    .userListControl{
+        width: 350px;
+        height: 30%;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: flex-start;
+        align-items: center;
+        padding-top: 10px;
+        color: #ccc;
+        img{
+            width: 70px;
+            height: 70px;
+            object-fit: contain;
+            margin-bottom: 20px;
+        }
+        button{
+            margin-top: 30px;
+            color:#fff;
+            background-color: $third-color;
+            border: none;
+            padding: 15px 30px;
+            transition: ease-in-out 0.1s;
+    
+            &:hover{
+                background-color: $second-color;
+                cursor: pointer;
+            }
+        }
+    }
+}

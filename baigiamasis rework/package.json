@@ -1,0 +1,51 @@
+{
+  "name": "baigiamasis",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@auth-kit/react-router": "^3.0.0",
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "crypto-browserify": "^3.12.0",
+    "eventsource": "^2.0.2",
+    "eventsource-polyfill": "^0.9.6",
+    "file-reader": "^1.1.1",
+    "https-browserify": "^1.0.0",
+    "react": "^18.2.0",
+    "react-auth-kit": "^3.0.0",
+    "react-dom": "^18.2.0",
+    "react-file-base64": "^1.0.3",
+    "react-router-dom": "^6.21.1",
+    "react-scripts": "5.0.1",
+    "url": "^0.11.3",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts --max-http-header-size=10240  start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "sass": "^1.69.7"
+  }
+}

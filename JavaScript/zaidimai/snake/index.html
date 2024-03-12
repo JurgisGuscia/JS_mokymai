@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>snake game</title>
+    <style>
+    *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+    body{
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+        background-color: #777;
+        display: flex;
+        flex-flow: column;
+        gap: 15px;
+        justify-content: center;
+        align-items: center;
+    }
+    canvas{
+        border: solid black 3px;
+        border-radius: 5px;
+    }
+    .display{
+        width: 300px;
+        height: 50px;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .foodEaten{
+        color: #ddd;
+        font-size: 1.5rem;
+    }
+    .level{
+        color: #ddd;
+        font-size: 1.5rem;
+    }
+    </style>
+</head>
+<body>
+    <div id="display" class="display">
+        <div class="foodEaten">Suvalgyta: <span id="foodEaten"></span></div>
+        <div class="level">Lygis: <span id="level"></span></div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.js" integrity="sha512-2r+xZ/Dm8+HI0I8dsj1Jlfchv4O3DGfWbqRalmSGtgdbVQrZyGRqHp9ek8GKk1x8w01JsmDZRrJZ4DzgXkAU+g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+    //fix food spawning underneath the snake
+    //fix hitting itself
+    //fix gamefield borders missalignment
+
+    const screenWidth = 510;
+    const screenHeight = 510;
+    const squareSize = 10;
+    const field = [];
+    let foodEaten = false;
+    let gameSpeed = 10;
+    let score = 0;
+    const food = [];
+    class GameSquare {
+    constructor(start, end) {
+        this.startX = start;
+        this.startY = end;
+        this.endX = start + squareSize;
+        this.endY = end + squareSize;
+        this.draw = function () {
+        rect(this.startX, this.startY, this.endX, this.endY);
+        };
+    }
+    }
+
+    class Snake {
+    constructor() {
+        this.headLocation = createVector(
+        screenWidth / 2 - ((screenWidth / 2) % squareSize),
+        screenWidth / 2 - ((screenWidth / 2) % squareSize)
+        );
+        this.velocity = createVector(0, squareSize);
+        this.tail = [];
+        this.tail[0] = createVector(
+            this.headLocation.x,
+            this.headLocation.y - squareSize
+        );
+        this.tail[1] = createVector(
+            this.headLocation.x,
+            this.headLocation.y - 2 * squareSize
+        );
+        this.tail[2] = createVector(
+            this.headLocation.x,
+            this.headLocation.y - 3 * squareSize
+        );
+        this.moved = false;
+        this.hasMoved = function () {
+            return this.moved;
+        };
+        this.hasNotMoved = function () {
+            this.moved = false;
+        };
+        this.resetTail = function () {
+            this.tail = [];
+            this.tail[0] = createVector(
+                this.headLocation.x,
+                this.headLocation.y - squareSize
+            );
+            this.tail[1] = createVector(
+                this.headLocation.x,
+                this.headLocation.y - 2 * squareSize
+            );
+            this.tail[2] = createVector(
+                this.headLocation.x,
+                this.headLocation.y - 3 * squareSize
+            );
+        };
+        this.move = function () {
+            this.tail.unshift(createVector(this.headLocation.x, this.headLocation.y));
+            if (!foodEaten) {
+                this.tail.pop();
+            } else {
+                foodEaten = false;
+            }
+            this.headLocation = this.headLocation.add(this.velocity);
+            this.moved = true;
+        };
+        this.show = function () {
+            fill(0);
+            rectMode(CENTER);
+            rect(this.headLocation.x, this.headLocation.y, squareSize, squareSize);
+            this.tail.forEach((item) => {
+                rect(item.x, item.y, squareSize, squareSize);
+            });
+            rectMode(CORNER);
+            fill(255);
+        };
+    }
+    }
+    let snake;
+
+    function setup() {
+        createCanvas(screenWidth, screenHeight);
+        createGameField();
+        snake = new Snake();
+    }
+
+    function draw() {
+        frameRate(gameSpeed);
+        background(255);
+        if (food.length === 0) {
+            plantFood();
+        }
+        showFood();
+        snake.move();
+        snake.show();
+        checkFoodEaten();
+        checkGameOver();
+        showInfo();
+    }
+
+    function createGameField() {
+        for (let j = 0; j < screenHeight; j += squareSize) {
+            for (let i = 0; i < screenWidth; i += squareSize) {
+            const cell = new GameSquare(j, i);
+            field.push(cell);
+            }
+        }
+    }
+
+    function showGameField() {
+        field.forEach((cell) => {
+            cell.draw();
+        });
+    }
+
+    function keyPressed() {
+        if (keyCode === LEFT_ARROW && snake.hasMoved()) {
+            if (snake.velocity.x != squareSize) {
+            snake.velocity.x = -squareSize;
+            snake.velocity.y = 0;
+            snake.hasNotMoved();
+            }
+        } else if (keyCode === RIGHT_ARROW && snake.hasMoved()) {
+            if (snake.velocity.x != -squareSize) {
+            snake.velocity.x = squareSize;
+            snake.velocity.y = 0;
+            snake.hasNotMoved();
+            }
+        } else if (keyCode === UP_ARROW && snake.hasMoved()) {
+            if (snake.velocity.y != squareSize) {
+            snake.velocity.x = 0;
+            snake.velocity.y = -squareSize;
+            snake.hasNotMoved();
+            }
+        } else if (keyCode === DOWN_ARROW && snake.hasMoved()) {
+            if (snake.velocity.y != -squareSize) {
+            snake.velocity.x = 0;
+            snake.velocity.y = squareSize;
+            snake.hasNotMoved();
+            }
+        }
+    }
+
+    function plantFood() {
+        let x = Math.floor(Math.random() * screenWidth);
+        let y = Math.floor(Math.random() * screenHeight);
+        x = x - (x % squareSize);
+        y = y - (y % squareSize);
+        if (x < squareSize) {
+            x = squareSize;
+        } else if (x > screenWidth - squareSize) {
+            x = screenWidth - squareSize;
+        }
+        if (y < squareSize) {
+            y = squareSize;
+        } else if (y > screenHeight - squareSize) {
+            y = screenHeight - squareSize;
+        }
+        let snack = createVector(x, y);
+        food.push(snack);
+        }
+        function showFood() {
+        food.forEach((snack) => {
+            fill(255, 0, 0);
+            rectMode(CENTER);
+            rect(snack.x, snack.y, squareSize, squareSize);
+            rectMode(CORNER);
+            fill(255);
+        });
+    }
+
+    function checkGameOver() {
+        if (
+            snake.headLocation.x > screenWidth ||
+            snake.headLocation.x < 0 ||
+            snake.headLocation.y > screenHeight ||
+            snake.headLocation.y < 0
+        ) {
+            resetGame();
+        }
+    }
+    function resetGame() {
+        snake.headLocation.x = screenWidth / 2 - ((screenWidth / 2) % squareSize);
+        snake.headLocation.y = screenWidth / 2 - ((screenWidth / 2) % squareSize);
+        snake.velocity.x = 0;
+        snake.velocity.y = squareSize;
+        snake.resetTail();
+        food.pop();
+        gameSpeed = 10;
+        score = 0;
+    }
+    function checkFoodEaten() {
+        let xMatch = snake.headLocation.x === food[0].x;
+        let yMatch = snake.headLocation.y === food[0].y;
+        if (xMatch && yMatch) {
+            foodEaten = true;
+            score++;
+            if(score%10 === 0){
+            gameSpeed = 10 + Math.floor(score / 10);
+            }    
+        food.pop();
+        }
+    }
+
+    function showInfo() {
+        document.getElementById("foodEaten").innerText = score;
+        document.getElementById("level").innerText = gameSpeed;
+    }
+    </script>
+</body>
+</html>

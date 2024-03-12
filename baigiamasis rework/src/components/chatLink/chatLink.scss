@@ -1,0 +1,65 @@
+@import "../../variables.scss";
+.chatListItem{
+    width: 350px;
+    border-bottom: solid 1px $third-color;
+    border-right: solid 1px $third-color;
+    height: 80px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+    background-color: #242526;
+    color: #ccc;
+    &:hover{
+        cursor: pointer;
+        background-color: $third-color;
+    }
+    img{
+        width: 50px;
+        height: 50px;
+        border-radius: 50px;
+        margin-left: 5px;
+    }
+    .chatListItemInfoContainer{
+        display: flex;
+        flex-flow: column nowrap;
+        gap: 5px;
+        justify-content: flex-start;
+        align-items: flex-start;
+        height: 100%;
+        width: 225px;
+        .usernameContainer{
+            height: 25px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            width: 220px;
+            font-weight:900;
+            color: #fff;
+        }
+        .lastMessageContainer{
+            font-size: 0.7rem;
+            width: 220px;
+            overflow: hidden;
+            height: 24px;
+        }
+        .lastMessageDate{
+            width: 220px;
+            font-size: 0.7rem;
+        }
+    }
+    .unreadMessageIndicatorContainer{
+        width: 30px;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .unreadMessageIndicator{
+            background-color: green;
+            width: 8px;
+            height: 8px;
+            border-radius: 50px;
+        }
+    }
+}

@@ -1,0 +1,59 @@
+.messageRowContainerLeft{
+    display: flex;
+    width: 100%;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    gap: 20px;
+    img{
+        width: 50px;
+        height: 50px;
+        border-radius: 50px;
+    }
+    word-break:break-all;
+    .partnerMessage{
+        padding: 5px;
+        background-color: #333;
+        color: #ccc;
+        border-radius: 10px;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+        max-width: 60%;
+    }
+    .fillerPicture{
+        width: 50px;
+        height: 50px;
+    }
+}
+.messageRowContainerRight{
+    display: flex;
+    width: 100%;
+    flex-flow: row nowrap;
+    gap: 20px;
+    justify-content: flex-end;
+    img{
+        width: 50px;
+        height: 50px;
+        border-radius: 50px;
+    }
+    word-break:break-all;
+    .userMessage{
+
+        padding: 5px;
+        background-color: #333;
+        color: #ccc;
+        border-radius: 10px;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-end;
+        align-items: flex-start;
+        max-width: 60%;
+        
+    }
+  
+    .fillerPicture{
+        width: 50px;
+        height: 50px;
+    }
+}

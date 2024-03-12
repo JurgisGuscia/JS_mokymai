@@ -1,0 +1,11 @@
+@import "../../variables.scss";
+
+.chatListContainer{
+    width: 350px;
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    flex-shrink: 0;
+    background-color: #242526;
+    border-right: solid 1px $third-color;
+}

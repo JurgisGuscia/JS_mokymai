@@ -1,0 +1,87 @@
+@import "../../variables.scss";
+.userProfileContainer{
+    display: flex;
+    flex-flow:column nowrap;
+    justify-content: center;
+    align-items: center;
+    .backdrop{
+        z-index: 89;
+        width: 100dvw;
+        height: 100dvh;
+        position:absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0,0,0, 0.5);
+    }
+    .userProfileWindow{
+        padding: 30px 0px;
+        z-index: 99;
+        background-color: #fff;
+        width: 500px;
+        position: absolute;
+        top: 10dvh;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        color: $first-color;
+        .userProfileRow{
+            width: 450px;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 10px 0px;
+            .userProfileNameSpace{
+                width: 160px;
+                img{
+                    width: 60px;
+                    height: 60px;
+                    object-fit: contain;
+                    border-radius: 50px;
+                    &:hover{
+                        cursor: default;
+                    }
+                }
+            }
+            .userProfileInfoSpace{
+                overflow:hidden;
+                width: 240px;               
+            }    
+            img{
+                width: 20px;
+                height: 30px;
+                object-fit: contain;
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+
+        } 
+        .firstProfileRow{
+            height: 70px;
+        }
+        .userProfileButtonContainer{
+            margin-top: 30px;
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            height: 50px;
+            gap:30px;
+            button{
+                color:#fff;
+                background-color: $first-color;
+                border: none;
+                padding: 15px 30px;
+                transition: ease-in-out 0.1s;
+                &:hover{
+                    background-color: $first-color;
+                    cursor: pointer;
+                }
+            }
+        }
+    } 
+}
+

@@ -1,0 +1,94 @@
+@import "../../variables.scss";
+
+.chaWindowContainer{
+    width: 100%;
+    height: 100%;
+    background-color: #242526;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
+    ::-webkit-scrollbar-track {
+        background: #242526;
+    }
+    ::-webkit-scrollbar-thumb {
+        background: #121212;
+        border-radius: 5px;
+    }
+    .chatHeaderContainer{
+        width: 100%;
+        border-bottom: solid 1px $third-color;
+        height: 70px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 10px;
+        img{
+            height: 50px;
+            width: 50px;
+            border-radius: 50px;
+            margin-left: 20px;
+        }
+        .chatHeaderNameContainer{
+            height: 100%;
+            width: 500px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            color: #ccc;
+        }
+    }
+    .chatMessagesContainer{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 5px 50px;
+        overflow-y: scroll;        
+        .bottomAnchorPoint{
+            height: 1px;
+        }
+    }
+
+    .chatInputContainer{
+        border-top: solid 1px $third-color;
+        width: 100%;
+        height: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        input{
+            width: 80%;
+            height: 60%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            outline: none;
+            border: solid $third-color 1px;
+            padding: 0px 10px;
+            background-color: #242526;
+            color: #ccc;
+        }
+        button{
+                width: 100px;
+                height: 60%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: $third-color;
+                border: none;
+                color: #fff;
+                transition: ease-in-out 0.1s;
+        
+                &:hover{
+                    background-color: $second-color;
+                    cursor: pointer;
+                }
+        }
+    }
+}
